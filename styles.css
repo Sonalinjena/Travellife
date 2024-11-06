@@ -189,6 +189,7 @@ body {
     padding: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .article {
@@ -201,11 +202,14 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
+    margin-right: 10px;
+
 }
 
 .article-info {
     text-align: left;
 }
+
 
 .category {
     font-size: 14px;
