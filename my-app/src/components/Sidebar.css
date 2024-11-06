@@ -1,0 +1,37 @@
+/* Sidebar.css */
+.sidebar {
+    width: 240px;
+    background-color: #2d3a5f;
+    color: white;
+    padding-top: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00aaff;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 16px;
+    color: #cfd8e2;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #1e2a46;
+}
+
+.icon {
+    margin-right: 10px;
+}

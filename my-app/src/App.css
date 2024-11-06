@@ -1,0 +1,71 @@
+/* Styling for Happy Diwali Message */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.diwali-message {
+  color: #ffea00;
+  font-size: 4rem;
+  font-family: 'Cursive', sans-serif;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+/* Fireworks container */
+.fireworks-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Firework shooting up */
+.firework-shoot {
+  position: absolute;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  background-color: #ffffff;
+  animation: shoot 1s ease-out forwards;
+}
+
+/* Firework explosion at the end */
+.firework-explode {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: explode 1s ease-out forwards;
+}
+
+/* Shooting animation */
+@keyframes shoot {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: var(--shoot-height); /* Reaches random height */
+  }
+}
+
+/* Explosion animation */
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
