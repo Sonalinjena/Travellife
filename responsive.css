@@ -1,0 +1,72 @@
+
+
+@media screen and (max-width: 768px) {
+    .top-nav {
+      padding: 0.25rem 2rem;
+    }
+  
+    .nav-link-section {
+      justify-content: space-between;
+      padding: 0.25rem 2rem;
+      align-items: center;
+    }
+  
+    .main-nav ul {
+      display: none;
+    }
+  
+    .ri-menu-3-line {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .social-icons {
+      gap: 0.85rem;
+    }
+  
+    .banner {
+      width: 100%;
+    }
+  
+    .travel-sections {
+      margin-top: 5rem;
+    }
+  
+    .article {
+      flex-direction: column;
+    }
+  
+    .description-nav {
+      margin-bottom: 1rem;
+    }
+  
+    .archive {
+      padding: 2rem 0;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .gallery img {
+      width: 100%;
+    }
+  
+    .footer-column {
+      border-right: none;
+    }
+  
+  
+  .categories h3{
+    justify-content: space-between;
+    padding: 0.25rem 2rem;
+    align-items: center;
+    
+  }
+}
+.popular-post h3{
+    justify-content: space-between;
+    padding: 0.25rem 2rem;
+    align-items: center;
+} 
