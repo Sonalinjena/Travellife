@@ -15,11 +15,6 @@
       display: none;
     }
   
-    .ri-menu-3-line {
-      display: block;
-    }
-  }
-  
   @media screen and (max-width: 450px) {
     .social-icons {
       gap: 0.85rem;
@@ -70,3 +65,4 @@
     padding: 0.25rem 2rem;
     align-items: center;
 } 
+}
