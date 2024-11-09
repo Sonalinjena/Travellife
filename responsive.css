@@ -1,68 +1,130 @@
+/* General Reset for Responsive Design */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
 
-@media screen and (max-width: 768px) {
-    .top-nav {
-      padding: 0.25rem 2rem;
-    }
-  
-    .nav-link-section {
-      justify-content: space-between;
-      padding: 0.25rem 2rem;
-      align-items: center;
-    }
-  
-    .main-nav ul {
-      display: none;
-    }
-  
-  @media screen and (max-width: 450px) {
-    .social-icons {
-      gap: 0.85rem;
-    }
-  
-    .banner {
-      width: 100%;
-    }
-  
-    .travel-sections {
-      margin-top: 5rem;
-    }
-  
-    .article {
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+
+  /* Top Navigation */
+  .top-nav {
       flex-direction: column;
-    }
-  
-    .description-nav {
-      margin-bottom: 1rem;
-    }
-  
-    .archive {
-      padding: 2rem 0;
-    }
-  
-    .gallery {
-      grid-template-columns: 1fr;
-    }
-  
-    .gallery img {
+      align-items: center;
+      padding: 15px;
+  }
+
+  .main-nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .main-nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+  }
+
+  .main-nav ul li {
+      margin: 10px 0;
+  }
+
+  /* Banner Section */
+  .banner {
+      height: 300px;
+  }
+
+  .banner-content h2 {
+      font-size: 24px;
+      padding: 0 15px;
+  }
+
+  /* Travel Sections */
+  .travel-sections {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .section-card {
       width: 100%;
-    }
-  
-    .footer-column {
-      border-right: none;
-    }
-  
-  
-  .categories h3{
-    justify-content: space-between;
-    padding: 0.25rem 2rem;
-    align-items: center;
-    
+      margin-bottom: 20px;
+  }
+
+  /* Content Layout */
+  .content {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .article {
+      width: 100%;
+  }
+
+  .about-me {
+      width: 100%;
+  }
+
+  /* Container and Sidebar */
+  .container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .main-content, .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  /* Sidebar Widgets */
+  .about-me img, .popular-post-item img, .post-preview img {
+      width: 80px;
+      height: 80px;
+  }
+
+  .popular-post-item {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Footer */
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-column {
+      margin-bottom: 20px;
+  }
+
+  /* Floating Button */
+  .floating-button {
+      right: 10px;
+      bottom: 10px;
   }
 }
-.popular-post h3{
-    justify-content: space-between;
-    padding: 0.25rem 2rem;
-    align-items: center;
-} 
+
+/* For extra-small screens */
+@media (max-width: 480px) {
+  
+  /* Main Navigation */
+  .main-nav ul li {
+      margin: 5px 0;
+  }
+
+  /* Banner Text */
+  .banner-content h2 {
+      font-size: 20px;
+  }
+
+  /* Footer Social Icons */
+  .social-icons a {
+      font-size: 16px;
+      margin: 5px;
+  }
 }
